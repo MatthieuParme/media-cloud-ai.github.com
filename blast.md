@@ -7,9 +7,9 @@ layout: blast
 bla.st is an open-source workflow which operates on the media-cloud.ai platform. It can create subtitles for files and live streams. The delivered output depends on the targeted use-case: subtitle file or subtitle stream, either for broadcast and web streaming.
 bla.st has been developed and strongly experimented by DaIA, the Artificial Intelligence team of France Televisions, on both French and English languages, using the [Speechmatics](https://www.speechmatics.com/) transcription engine. The workflow stays open to any other engine.
 
-## screen capture of a live automatic subtitled stream, using bla.st
+## screen capture of a live automatic subtitled stream using bla.st
 
-{% include mermaid_schemas/main_architecture.html %}
+{% include blast_contents/franceinfo_demo.html %}
 
 ### Architecture
 
@@ -21,5 +21,6 @@ bla.st is using at least 3 <b>workers</b> to produce subtitles:
 Other workers could be added, i.e. if an automatic translation or a better speaker change detector are needed.
 All these workers are open to collaborative improvements under the AGPL license.
 
+## use-case example: using some aws media services, media-cloud.ai and bla.st to subtitle a live stream
 
-{% include mermaid_schemas/main_architecture.html %}
+{% include blast_contents/web_use-case.html %}
